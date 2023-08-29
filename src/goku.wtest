@@ -1,0 +1,25 @@
+import gokuylaesfera.*
+
+
+test "goku transformado en supersayayin tiene kitotal de 400" {
+
+	goku.transformar(superSayayin)
+	assert.equals(400,goku.kiTotal())
+
+}
+
+test "goku transformado en supersayayin con fase 2 tiene kitotal de 600" {
+
+	goku.transformar(superSayayin)
+	goku.cambiarFase()
+	assert.equals(600,goku.kiTotal())
+
+}
+
+test "goku en estado normal tiene kitotal de 200" {
+
+	assert.equals(200,goku.kiTotal())
+
+}
+
+
